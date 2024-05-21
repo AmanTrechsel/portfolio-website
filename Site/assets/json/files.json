@@ -1,0 +1,116 @@
+{
+  "cv": {
+    "name": "CV",
+    "icon": "Folder",
+    "window": "cv",
+    "desktop": true
+  },
+  "professional-skills": {
+    "name": "Professional Skills",
+    "icon": "Folder",
+    "window": "professional-skills",
+    "desktop": true
+  },
+    "professional-skills-y1s2": {
+      "name": "Year 1 Semester 2",
+      "icon": "Folder",
+      "window": "professional-skills-y1s2",
+      "desktop": false
+    },
+      "professional-skills-y1s2-rapporteren": {
+        "name": "Rapporteren",
+        "icon": "Folder",
+        "window": "professional-skills-y1s2-rapporteren",
+        "desktop": false
+      },
+        "ps-y1s2-technisch-adviesrapport": {
+          "name": "Technisch Adviesrapport",
+          "icon": "Pdf",
+          "window": "ps-y1s2-technisch-adviesrapport",
+          "desktop": false
+        },
+        "ps-y1s2-bouwplan": {
+          "name": "Bouwplan",
+          "icon": "Pdf",
+          "window": "ps-y1s2-bouwplan",
+          "desktop": false
+        },
+      "professional-skills-y1s2-onderzoek": {
+        "name": "Onderzoek",
+        "icon": "Folder",
+        "window": "professional-skills-y1s2-onderzoek",
+        "desktop": false
+      },
+        "ps-y1s2-interviewschema": {
+          "name": "Interviewschema",
+          "icon": "Pdf",
+          "window": "ps-y1s2-interviewschema",
+          "desktop": false
+        },
+        "ps-y1s2-transcriptie": {
+          "name": "Transcriptie",
+          "icon": "Pdf",
+          "window": "ps-y1s2-transcriptie",
+          "desktop": false
+        },
+      "ps-y1s2-edumundo": {
+        "name": "Edumundo",
+        "icon": "Pdf",
+        "window": "ps-y1s2-edumundo",
+        "desktop": false
+      },
+      "ps-y1s2-digitale-presentatie": {
+        "name": "Digitale Presentatie",
+        "icon": "Video",
+        "window": "ps-y1s2-digitale-presentatie",
+        "desktop": false
+      },
+    "professional-skills-y2s1": {
+      "name": "Year 2 Semester 1",
+      "icon": "Folder",
+      "window": "professional-skills-y2s1",
+      "desktop": false
+    },
+    "professional-skills-y2s2": {
+      "name": "Year 2 Semester 2",
+      "icon": "Folder",
+      "window": "professional-skills-y2s2",
+      "desktop": false
+    },
+  "school-projects": {
+    "name": "School Projects",
+    "icon": "Folder",
+    "window": "school-projects",
+    "desktop": true
+  },
+  "personal-projects": {
+    "name": "Personal Projects",
+    "icon": "Folder",
+    "window": "personal-projects",
+    "desktop": true
+  },
+  "about": {
+    "name": "About",
+    "icon": "About",
+    "window": "about",
+    "desktop": true
+  },
+  "contact": {
+    "name": "Contact",
+    "icon": "Contact",
+    "window": "contact",
+    "desktop": true
+  },
+  "cv-nl": {
+    "name": "CV (NL)",
+    "icon": "Pdf",
+    "window": "cv-pdf-nl",
+    "desktop": false
+  },
+  "cv-en": {
+    "name": "CV (EN)",
+    "icon": "Pdf",
+    "window": "cv-pdf-en",
+    "desktop": false
+  }
+}

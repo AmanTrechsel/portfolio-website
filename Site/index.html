@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Aman Trechsel</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/monitor.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico">
+    <link rel="icon" href="assets/img/Logo.webp" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aman Trechsel • Portfolio Website.">
+    <meta property="og:title" content="Aman Trechsel • Portfolio">
+    <meta property="og:description" content="Aman Trechsel • Portfolio Website.">
+    <meta property="og:site_name" content="Aman Trechsel">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.aman.gg/assets/img/Logo.webp">
+    <meta property="og:image:alt" content="Aman Trechsel Portfolio">
+    <meta property="og:url" content="https://www.aman.gg/">
+    <meta property="twitter:title" content="Aman Trechsel • Portfolio">
+    <meta property="twitter:description" content="Aman Trechsel • Portfolio Website.">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:image" content="https://www.aman.gg/assets/img/Logo.webp">
+    <meta property="twitter:url" content="https://www.aman.gg/">
+    <meta name="keywords" content="aman trechsel, digital portfolio, software engineer">
+  </head>
+  <body>
+    <div id="localization">
+      <button id="en" onclick="setLocalization('en')" title="English (Engels)" aria-label="English" lang="en-us"></button>
+      <button id="nl" onclick="setLocalization('nl')" title="Nederlands (Dutch)" aria-label="Nederlands" lang="nl"></button>
+    </div>
+    <div id="glSupported">
+      <div id="beforeLoaded">
+        <div id="loadingBar">
+          <div id="loadingBarBlock">
+            <h3 id="loadText" data-localize="loading"></h3>
+            <img id="load" src="./assets/img/loading.gif" alt="Loading Icon">
+          </div>
+          <div id="loadingBarTooLong">
+            <p id="loadTextTooLong" data-localize="loading_too_long"></p>
+            <button id="loadTooLongSimpleButton" onclick="simpleView()" data-localize="simple_button"></button>
+          </div>
+        </div>
+      </div>
+      <div id="postLoaded">
+        <button id="simpleButton" onclick="simpleView()" data-localize="simple_button"></button>
+        <h4 id="hardwareWarning" data-localize="hardware_warning"></h4>
+      </div>
+      <script src="./scripts/localization.js"></script>
+      <div class="monitor">
+        <div class="content">
+          
+        </div>
+        <div class="windows">
+      
+        </div>
+        <div class="navbar">
+          <button class="start"><img id="navbar-logo" src="./assets/img/Logo.webp" alt="Navbar Logo" /><span data-localize="start"></span></button>
+          <div class="nav-tasks">
+          </div>
+          <div class="nav-task-end">
+            <p id="current-time"></p>
+          </div>
+        </div>
+      </div>
+      <canvas id="unity-canvas" width=960 height=540 tabindex="-1"></canvas>
+      <script src="./Build/Scene View.loader.js"></script>
+      <script src="scripts/index.js"></script>
+    </div>
+    <div id="glNotSupported">
+      <h1 data-localize="gl_not_supported"></h1>
+      <button id="simpleButton" onclick="simpleView()" data-localize="simple_button"></button>
+    </div>
+    <div id="orientationNotSupported">
+      <h1 data-localize="orientation_not_supported"></h1>
+    </div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="scripts/loader.js"></script>
+    <script src="scripts/glTest.js"></script>
+    <script src="scripts/content.js"></script>
+    <script src="scripts/window.js"></script>
+  </body>
+</html>

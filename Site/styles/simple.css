@@ -1,0 +1,268 @@
+.content {
+  color: var(--text);
+  height: 100dvh;
+  overflow: auto;
+}
+
+.full-fill {
+  height: 100%;
+  background-color: var(--load-bg);
+}
+
+.full-fill iframe {
+  height: inherit;
+}
+
+.project-image {
+  height: unset;
+  height: unset;
+}
+
+.navbar-title {
+  margin: 0 32px;
+}
+
+.navbar {
+  background-image: none;
+  background-color: var(--file-background);
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  display: none;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-mobile {
+  background-color: var(--file-background);
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-mobile-side {
+  background-color: var(--file-background);
+  height: calc(100% - 64px);
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  transition: width 0.1s;
+}
+
+.navbar.open {
+  width: auto;
+  min-width: 160px;
+  max-width: 240px;
+}
+
+.navbar-button {
+  font-family: var(--font-family);
+  background: var(--file-background);
+  color: var(--text);
+  border: 2px solid var(--text);
+  font-size: 1em;
+  padding: 8px 16px;
+  margin: 8px;
+  cursor: pointer;
+  transition: background 0.1s, color 0.1s;
+}
+
+.navbar-button:hover {
+  background: var(--text);
+  color: var(--file-background);
+}
+
+.navbar-button:active {
+  background: var(--background);
+  color: var(--text);
+}
+
+.navbar-submenu {
+  display: none;
+  background-color: var(--file-background);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transform-origin: top;
+  flex-direction: column;
+  border: 1px solid var(--text);
+}
+
+#buger-menu {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  background-image: url("../assets/img/burger-menu.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  transition: background-image 0.2s;
+}
+
+#buger-menu.open {
+  background-image: url("../assets/img/burger-menu-open.svg");
+}
+
+
+@media (min-width: 576px) {
+  .navbar {
+    height: calc(100% - 64px);
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    transition: width 0.1s;
+  }
+
+  .navbar #localization {
+    display: none;
+  }
+
+  .navbar-button {
+    font-size: 0.9em;
+    padding: 4px 8px;
+    margin: 4px;
+  }
+
+  .navbar.open {
+    min-width: 160px;
+    max-width: 240px;
+  }
+
+  .navbar-submenu {
+    margin-top: 0;
+  }
+
+  .navbar-mobile {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    height: calc(100% - 64px);
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    transition: width 0.1s;
+  }
+
+  .navbar #localization {
+    display: none;
+  }
+
+  .navbar.open {
+    min-width: 160px;
+    max-width: 240px;
+  }
+
+  .navbar-button {
+    font-size: 0.9em;
+    padding: 4px 8px;
+    margin: 4px;
+  }
+
+  .navbar-submenu {
+    margin-top: 0;
+  }
+
+  .navbar-mobile {
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    position: unset;
+    display: flex;
+    width: 100%;
+    height: 64px;
+    overflow: unset;
+    flex-direction: row;
+    transition: none;
+    align-items: center;
+  }
+
+  .navbar #localization {
+    display: unset;
+  }
+
+  .navbar.open {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .navbar-button {
+    font-size: 1.1em;
+    padding: 8px 16px;
+    margin: 8px;
+  }
+
+  .navbar-submenu {
+    margin-top: auto;
+  }
+
+  .navbar-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    position: unset;
+    display: flex;
+    width: 100%;
+    height: 64px;
+    overflow: unset;
+    flex-direction: row;
+    transition: none;
+    align-items: center;
+  }
+
+  .navbar #localization {
+    display: unset;
+  }
+
+  .navbar.open {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .navbar-button {
+    font-size: 1.1em;
+    padding: 8px 16px;
+    margin: 8px;
+  }
+
+  .navbar-submenu {
+    margin-top: auto;
+  }
+
+  .navbar-mobile {
+    display: none;
+  }
+}

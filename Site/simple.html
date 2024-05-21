@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Aman Trechsel</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/monitor.css">
+    <link rel="stylesheet" href="./styles/simple.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico">
+    <link rel="icon" href="assets/img/Logo.webp" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aman Trechsel • Portfolio Website.">
+    <meta property="og:title" content="Aman Trechsel • Portfolio">
+    <meta property="og:description" content="Aman Trechsel • Portfolio Website.">
+    <meta property="og:site_name" content="Aman Trechsel">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.aman.gg/assets/img/Logo.webp">
+    <meta property="og:image:alt" content="Aman Trechsel Portfolio">
+    <meta property="og:url" content="https://www.aman.gg/">
+    <meta property="twitter:title" content="Aman Trechsel • Portfolio">
+    <meta property="twitter:description" content="Aman Trechsel • Portfolio Website.">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:image" content="https://www.aman.gg/assets/img/Logo.webp">
+    <meta property="twitter:url" content="https://www.aman.gg/">
+    <meta name="keywords" content="aman trechsel, digital portfolio, software engineer">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <button class="navbar-button" onclick="complexView()" title="Complex View" aria-label="Complex View" data-localize="complex-view"></button>
+      <h1 class="navbar-title">Aman Trechsel</h1>
+      <div id="localization">
+        <button id="en" onclick="setLocalization('en')" title="English (Engels)" aria-label="English" lang="en-us"></button>
+        <button id="nl" onclick="setLocalization('nl')" title="Nederlands (Dutch)" aria-label="Nederlands" lang="nl"></button>
+      </div>
+    </div>
+
+    <div class="navbar-mobile">
+      <button class="navbar-button" id="buger-menu" title="Burger Menu" onclick="toggleBurgerMenu()"></button>
+      <button class="navbar-button" onclick="complexView()" title="Complex View" aria-label="Complex View" data-localize="complex-view"></button>
+      <div id="localization">
+        <button id="en" onclick="setLocalization('en')" title="English (Engels)" aria-label="English" lang="en-us"></button>
+        <button id="nl" onclick="setLocalization('nl')" title="Nederlands (Dutch)" aria-label="Nederlands" lang="nl"></button>
+      </div>
+    </div>
+
+    <div class="content" onclick="resetSubmenus('')">
+      <div class="full-fill">
+        <h1 style="color: white;">Aman Trechsel</h1>
+        <p style="color: white;" data-localize="simple_text"></p>
+      </div>
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="scripts/content.js"></script>
+    <script src="./scripts/simple.js"></script>
+    <script src="./scripts/localization.js"></script>
+  </body>
+</html>

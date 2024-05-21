@@ -1,0 +1,23 @@
+<div class="window" id="{{type}}">
+  <div class="navbar-inverse">
+    <button class="close" onclick="closeWindow('{{type}}')"></button>
+    <button class="maximize" onclick="maximizeWindow('{{type}}')"></button>
+    <button class="minimize" onclick="minimizeWindow('{{type}}')"></button>
+    <div class="navbar-movable"></div>
+    <h1 data-localize="{{type}}_name"></h1>
+    <img class="window-icon" src="./assets/img/{{icon}}.webp" alt="Window Icon {{icon}}" />
+  </div>
+  <div class="menu-bar">
+    <img class="move-icon" src="./assets/img/Move.webp" alt="Move Icon" />
+    <button class="menu-button" data-localize="file"></button>
+    <button class="menu-button" data-localize="edit"></button>
+    <button class="menu-button" data-localize="view"></button>
+    <button class="menu-button" data-localize="favorites"></button>
+    <button class="menu-button" data-localize="tools"></button>
+    <button class="menu-button" data-localize="help"></button>
+    <img class="menu-type-icon" src="./assets/img/Logo.webp" alt="Menu Icon" />
+  </div>
+  <div class="window-content">
+    {{content}}
+  </div>
+</div>

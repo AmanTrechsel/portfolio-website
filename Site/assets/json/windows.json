@@ -1,0 +1,605 @@
+{
+  "cv": {
+    "name": "CV",
+    "icon": "Folder",
+    "content": "{{file:cv-nl}}{{file:cv-en}}",
+    "desktop": true
+  },
+    "cv-nl": {
+      "name": "CV (NL)",
+      "icon": "Pdf",
+      "content": "{{var:iframeFile}}",
+      "loadFile": "pdf/CV_NL_2024.pdf"
+    },
+    "cv-en": {
+      "name": "CV (EN)",
+      "icon": "Pdf",
+      "content": "{{var:iframeFile}}",
+      "loadFile": "pdf/CV_EN_2024.pdf"
+    },
+  "professional-skills": {
+    "name": "Professional Skills",
+    "icon": "Folder",
+    "content": "{{file:professional-skills-y1s2}}{{file:professional-skills-y2s1}}{{file:professional-skills-y2s2}}",
+    "desktop": true
+  },
+    "professional-skills-y1s2": {
+      "name": "Year 1 Semester 2",
+      "icon": "Folder",
+      "content": "{{file:professional-skills-y1s2-rapporteren}}{{file:professional-skills-y1s2-onderzoek}}{{file:professional-skills-y1s2-communiceren}}{{file:professional-skills-y1s2-pva}}{{file:professional-skills-y1s2-feedback}}{{file:ps-y1s2-edumundo}}{{file:ps-y1s2-pop}}{{file:ps-y1s2-reflectieverslag}}{{file:ps-y1s2-digitale-presentatie}}"
+    },
+      "professional-skills-y1s2-rapporteren": {
+        "name": "Rapporteren",
+        "icon": "Folder",
+        "content": "{{file:ps-y1s2-technisch-adviesrapport}}{{file:ps-y1s2-bouwplan}}"
+      },
+        "ps-y1s2-technisch-adviesrapport": {
+          "name": "Technisch Adviesrapport",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_TechnischAdviesrapport.pdf"
+        },
+        "ps-y1s2-bouwplan": {
+          "name": "Bouwplan",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_Bouwplan.pdf"
+        },
+      "professional-skills-y1s2-onderzoek": {
+        "name": "Onderzoek",
+        "icon": "Folder",
+        "content": "{{file:ps-y1s2-interviewschema}}{{file:ps-y1s2-transcriptie}}{{file:ps-y1s2-technisch-adviesrapport}}"
+      },
+        "ps-y1s2-interviewschema": {
+          "name": "Interviewschema",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_Interviewschema.pdf"
+        },
+        "ps-y1s2-transcriptie": {
+          "name": "Transcriptie",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_Transcriptie.pdf"
+        },
+      "ps-y1s2-edumundo": {
+        "name": "Edumundo",
+        "icon": "Pdf",
+        "content": "{{var:iframeFile}}",
+        "loadFile": "pdf/PS_Y1S2_Edumundo.pdf"
+      },
+      "ps-y1s2-digitale-presentatie": {
+        "name": "Digitale Presentatie",
+        "icon": "Video",
+        "content": "{{var:videoFile}}",
+        "loadFile": "PS_Y1S2_Digitale_Presentatie.mp4"
+      },
+      "professional-skills-y1s2-communiceren": {
+        "name": "Communiceren",
+        "icon": "Folder",
+        "content": "{{file:ps-y1s2-feedback-periode-2}}{{file:ps-y1s2-feedback-vergaderen-student-1}}{{file:ps-y1s2-feedback-vergaderen-student-2}}{{file:ps-y1s2-feedback-vergaderen-student-3}}{{file:ps-y1s2-feedback-vergaderen-student-4}}"
+      },
+        "ps-y1s2-feedback-periode-2": {
+          "name": "Feedback - Periode 2",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_FeedbackPeriode2.pdf"
+        },
+        "ps-y1s2-feedback-vergaderen-student-1": {
+          "name": "Feedback Vergaderen - Student 1",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_FeedbackVergaderenStudent1.pdf"
+        },
+        "ps-y1s2-feedback-vergaderen-student-2": {
+          "name": "Feedback Vergaderen - Student 2",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_FeedbackVergaderenStudent2.pdf"
+        },
+        "ps-y1s2-feedback-vergaderen-student-3": {
+          "name": "Feedback Vergaderen - Student 3",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_FeedbackVergaderenStudent3.pdf"
+        },
+        "ps-y1s2-feedback-vergaderen-student-4": {
+          "name": "Feedback Vergaderen - Student 4",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_FeedbackVergaderenStudent4.pdf"
+        },
+      "professional-skills-y1s2-pva": {
+        "name": "Plan van Aanpak",
+        "icon": "Folder",
+        "content": "{{file:ps-y1s2-plan-van-aanpak-periode-2}}{{file:ps-y1s2-urenverantwoording-periode-4}}{{file:ps-y1s2-project-planning-periode-2}}"
+      },
+        "ps-y1s2-plan-van-aanpak-periode-2": {
+          "name": "Plan van Aanpak - Periode 2",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_PlanVanAanpakPeriode2.pdf"
+        },
+        "ps-y1s2-urenverantwoording-periode-4": {
+          "name": "Urenverantwoording - Periode 4",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_UrenverantwoordingPeriode4.pdf"
+        },
+        "ps-y1s2-project-planning-periode-2": {
+          "name": "Project Planning - Periode 2",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_ProjectPlanningPeriode2.pdf"
+        },
+      "ps-y1s2-pop": {
+        "name": "POP",
+        "icon": "Pdf",
+        "content": "{{var:iframeFile}}",
+        "loadFile": "pdf/PS_Y1S2_POP.pdf"
+      },
+      "ps-y1s2-reflectieverslag": {
+        "name": "Reflectieverslag",
+        "icon": "Pdf",
+        "content": "{{var:iframeFile}}",
+        "loadFile": "pdf/PS_Y1S2_Reflectieverslag.pdf"
+      },
+      "professional-skills-y1s2-feedback": {
+        "name": "Feedback",
+        "icon": "Folder",
+        "content": "{{file:ps-y1s2-feedback-docent}}{{file:ps-y1s2-feedback-student-1}}{{file:ps-y1s2-feedback-student-2}}{{file:ps-y1s2-feedback-student-3}}{{file:ps-y1s2-feedback-student-4}}{{file:ps-y1s2-feedback-periode-2}}{{file:ps-y1s2-feedback-vergaderen-student-1}}{{file:ps-y1s2-feedback-vergaderen-student-2}}{{file:ps-y1s2-feedback-vergaderen-student-3}}{{file:ps-y1s2-feedback-vergaderen-student-4}}"
+      },
+        "ps-y1s2-feedback-docent": {
+          "name": "Feedback - Docent",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_FeedbackDocent.pdf"
+        },
+        "ps-y1s2-feedback-student-1": {
+          "name": "Feedback - Student 1",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_FeedbackStudent1.pdf"
+        },
+        "ps-y1s2-feedback-student-2": {
+          "name": "Feedback - Student 2",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_FeedbackStudent2.pdf"
+        },
+        "ps-y1s2-feedback-student-3": {
+          "name": "Feedback - Student 3",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_FeedbackStudent3.pdf"
+        },
+        "ps-y1s2-feedback-student-4": {
+          "name": "Feedback - Student 4",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y1S2_FeedbackStudent4.pdf"
+        },
+    "professional-skills-y2s1": {
+      "name": "Year 2 Semester 1",
+      "icon": "Folder",
+      "content": "{{file:professional-skills-y2s1-projectmanagement}}{{file:professional-skills-y2s1-engels}}{{file:professional-skills-y2s1-feedback}}{{file:ps-y2s1-edumundo}}{{file:ps-y2s1-pop}}{{file:ps-y2s1-reflectieverslag}}{{file:ps-y2s1-beroepsorientatie}}{{file:ps-y2s1-ethiek}}{{file:ps-y2s1-onderzoek}}"
+    },
+      "ps-y2s1-edumundo": {
+        "name": "Edumundo",
+        "icon": "Pdf",
+        "content": "{{var:iframeFile}}",
+        "loadFile": "pdf/PS_Y2S1_Edumundo.pdf"
+      },
+      "ps-y2s1-pop": {
+        "name": "POP",
+        "icon": "Pdf",
+        "content": "{{var:iframeFile}}",
+        "loadFile": "pdf/PS_Y2S1_POP.pdf"
+      },
+      "ps-y2s1-reflectieverslag": {
+        "name": "Reflectieverslag",
+        "icon": "Pdf",
+        "content": "{{var:iframeFile}}",
+        "loadFile": "pdf/PS_Y2S1_Reflectieverslag.pdf"
+      },
+      "ps-y2s1-beroepsorientatie": {
+        "name": "Beroepsoriëntatie",
+        "icon": "Pdf",
+        "content": "{{var:iframeFile}}",
+        "loadFile": "pdf/PS_Y2S1_Beroepsorientatie.pdf"
+      },
+      "ps-y2s1-ethiek": {
+        "name": "Ethiek",
+        "icon": "Pdf",
+        "content": "{{var:iframeFile}}",
+        "loadFile": "pdf/PS_Y2S1_Ethiek.pdf"
+      },
+      "ps-y2s1-onderzoek": {
+        "name": "Onderzoek",
+        "icon": "Pdf",
+        "content": "{{var:iframeFile}}",
+        "loadFile": "pdf/PS_Y2S1_Onderzoek.pdf"
+      },
+      "professional-skills-y2s1-projectmanagement": {
+        "name": "Projectmanagement",
+        "icon": "Folder",
+        "content": "{{file:ps-y2s1-plan-van-aanpak-periode-1}}{{file:ps-y2s1-urenverantwoording-periode-1}}"
+      },
+        "ps-y2s1-plan-van-aanpak-periode-1": {
+          "name": "Plan van Aanpak - Periode 1",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y2S1_PlanVanAanpakPeriode1.pdf"
+        },
+        "ps-y2s1-urenverantwoording-periode-1": {
+          "name": "Urenverantwoording - Periode 1",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y2S1_UrenverantwoordingPeriode1.pdf"
+        },
+      "professional-skills-y2s1-engels": {
+        "name": "Engels",
+        "icon": "Folder",
+        "content": "{{file:ps-y2s1-guidelines}}{{file:ps-y2s1-email1}}{{file:ps-y2s1-email2}}{{file:ps-y2s1-useful-mistake}}{{file:ps-y2s1-formal-writing}}{{file:ps-y2s1-speaking1}}{{file:ps-y2s1-speaking2}}"
+      },
+        "ps-y2s1-guidelines": {
+          "name": "Guidelines",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y2S1_Guidelines.pdf"
+        },
+        "ps-y2s1-email1": {
+          "name": "E-mail #1",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y2S1_Email1.pdf"
+        },
+        "ps-y2s1-email2": {
+          "name": "E-mail #2",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y2S1_Email2.pdf"
+        },
+        "ps-y2s1-useful-mistake": {
+          "name": "Useful Mistake",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y2S1_UsefulMistake.pdf"
+        },
+        "ps-y2s1-formal-writing": {
+          "name": "Formal Writing",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y2S1_FormalWriting.pdf"
+        },
+        "ps-y2s1-speaking1": {
+          "name": "Speaking #1",
+          "icon": "Audio",
+          "content": "{{var:audioFile}}",
+          "loadFile": "PS_Y2S1_Speaking1.mp3"
+        },
+        "ps-y2s1-speaking2": {
+          "name": "Speaking #2",
+          "icon": "Audio",
+          "content": "{{var:audioFile}}",
+          "loadFile": "PS_Y2S1_Speaking2.mp3"
+        },
+      "professional-skills-y2s1-feedback": {
+        "name": "Feedback",
+        "icon": "Folder",
+        "content": "{{file:ps-y2s1-feedback-roan}}{{file:ps-y2s1-feedback-tim}}{{file:ps-y2s1-feedback-raeven}}"
+      },
+        "ps-y2s1-feedback-roan": {
+          "name": "Feedback Roan",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y2S1_FeedbackRoan.pdf"
+        },
+        "ps-y2s1-feedback-tim": {
+          "name": "Feedback Tim",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y2S1_FeedbackTim.pdf"
+        },
+        "ps-y2s1-feedback-raeven": {
+          "name": "Feedback Raeven",
+          "icon": "Pdf",
+          "content": "{{var:iframeFile}}",
+          "loadFile": "pdf/PS_Y2S1_FeedbackRaeven.pdf"
+        },
+    "professional-skills-y2s2": {
+      "name": "Year 2 Semester 2",
+      "icon": "Folder",
+      "content": "{{file:ps-y2s2-pop}}"
+    },
+      "ps-y2s2-pop": {
+        "name": "POP",
+        "icon": "Pdf",
+        "content": "{{var:iframeFile}}",
+        "loadFile": "pdf/PS_Y2S2_POP.pdf"
+      },
+  "school-projects": {
+    "name": "School Projects",
+    "icon": "Folder",
+    "content": "{{file:sunny}}{{file:morgister}}{{file:battlebots}}{{file:timewise}}{{file:duo}}{{file:trainingssite}}{{file:hbomin}}{{file:racesim-dashboard}}{{file:jabberpoint}}",
+    "desktop": true
+  },
+    "sunny": {
+      "name": "Sunny Socks",
+      "icon": "Sunny",
+      "content": "{{var:sunnyContent}}"
+    },
+    "morgister": {
+      "name": "Morgister",
+      "icon": "Morgister",
+      "content": "{{var:morgisterContent}}"
+    },
+    "battlebots": {
+      "name": "Battlebots",
+      "icon": "Battlebots",
+      "content": "{{var:battlebotsContent}}"
+    },
+    "timewise": {
+      "name": "TimeWise",
+      "icon": "TimeWise",
+      "content": "{{var:timeWiseContent}}"
+    },
+    "duo": {
+      "name": "DUO Sollicitatie Formulier",
+      "icon": "DUO",
+      "content": "{{var:duoContent}}"
+    },
+    "trainingssite": {
+      "name": "DUO Trainingssite",
+      "icon": "DUO",
+      "content": "{{var:trainingssiteContent}}"
+    },
+    "hbomin": {
+      "name": "HBO-Min",
+      "icon": "HBOMin",
+      "content": "{{var:hboMinContent}}"
+    },
+    "racesim-dashboard": {
+      "name": "Racesimulator Dashboard",
+      "icon": "Racesim",
+      "content": "{{var:racesimDashboardContent}}"
+    },
+    "jabberpoint": {
+      "name": "Jabberpoint",
+      "icon": "Java",
+      "content": "{{var:jabberpointContent}}"
+    },
+  "personal-projects": {
+    "name": "Personal Projects",
+    "icon": "Folder",
+    "content": "{{file:pokemon-fangames}}{{file:game-scripts}}{{file:overige-games}}{{file:portfolio-website}}{{file:dnd}}",
+    "desktop": true
+  },
+    "pokemon-fangames": {
+      "name": "Pokémon Fangames",
+      "icon": "Folder",
+      "content": "{{file:rc-game-jam}}{{file:pog-jam}}{{file:voltseon-jam}}{{file:other}}"
+    },
+      "rc-game-jam": {
+        "name": "Relic Castle Game Jams",
+        "icon": "Folder",
+        "content": "{{file:pivot}}{{file:shattered-light}}{{file:last-wish}}{{file:last-wish-2}}{{file:ethos}}{{file:splice}}{{file:space-trainers}}{{file:beekeeper}}{{file:quantum}}{{file:pokeclicker}}{{file:pokescape3d}}{{file:dw}}{{file:zorua}}"
+      },
+        "pivot": {
+          "name": "Pivot",
+          "icon": "Pivot",
+          "content": "{{var:pivotContent}}"
+        },
+        "shattered-light": {
+          "name": "Pokémon Shattered Light",
+          "icon": "ShatteredLight",
+          "content": "{{var:shatteredLightContent}}"
+        },
+        "last-wish": {
+          "name": "Pokémon and the Last Wish",
+          "icon": "LastWish",
+          "content": "{{var:lastWishContent}}"
+        },
+        "last-wish-2": {
+          "name": "Pokémon and the Last Wish Part II",
+          "icon": "LastWish2",
+          "content": "{{var:lastWish2Content}}"
+        },
+        "ethos": {
+          "name": "Pokémon Ethos",
+          "icon": "Ethos",
+          "content": "{{var:ethosContent}}"
+        },
+        "splice": {
+          "name": "Pokémon Splice",
+          "icon": "Splice",
+          "content": "{{var:spliceContent}}"
+        },
+        "space-trainers": {
+          "name": "Space Trainers",
+          "icon": "SpaceTrainers",
+          "content": "{{var:spaceTrainersContent}}"
+        },
+        "beekeeper": {
+          "name": "Pokémon Beekeeper",
+          "icon": "Beekeeper",
+          "content": "{{var:beekeeperContent}}"
+        },
+        "quantum": {
+          "name": "Pokémon Quantum",
+          "icon": "Quantum",
+          "content": "{{var:quantumContent}}"
+        },
+        "pokeclicker": {
+          "name": "PokéClicker",
+          "icon": "Game",
+          "content": "{{var:pokeClickerContent}}"
+        },
+        "pokescape3d": {
+          "name": "PokéScape3D",
+          "icon": "Game",
+          "content": "{{var:pokeScape3DContent}}"
+        },
+        "dw": {
+          "name": "Pokémon D.W.",
+          "icon": "Game",
+          "content": "{{var:dwContent}}"
+        },
+        "zorua": {
+          "name": "Pokémon Zorua",
+          "icon": "Game",
+          "content": "{{var:zoruaContent}}"
+        },
+      "pog-jam": {
+        "name": "Pog Jams",
+        "icon": "Folder",
+        "content": "{{file:my-friend-riolu}}{{file:wog-tog}}{{file:poggers-legends}}"
+      },
+        "my-friend-riolu": {
+          "name": "My friend Riolu",
+          "icon": "Game",
+          "content": "{{var:myFriendRioluContent}}"
+        },
+        "wog-tog": {
+          "name": "Wog Tog",
+          "icon": "WogTog",
+          "content": "{{var:wogTogContent}}"
+        },
+        "poggers-legends": {
+          "name": "Pogger's Legends",
+          "icon": "Game",
+          "content": "{{var:poggersLegendsContent}}"
+        },
+      "voltseon-jam": {
+        "name": "Voltseon Jam",
+        "icon": "Folder",
+        "content": "{{file:watermelons-with-garchomp}}{{file:politoader}}{{file:the-cake-is-real}}{{file:pokemon-trash-island}}{{file:topsy-turvy}}"
+      },
+        "watermelons-with-garchomp": {
+          "name": "Watermelons with Garchomp",
+          "icon": "Game",
+          "content": "{{var:watermelonsWithGarchompContent}}"
+        },
+        "politoader": {
+          "name": "Politoader",
+          "icon": "Game",
+          "content": "{{var:politoaderContent}}"
+        },
+        "the-cake-is-real": {
+          "name": "The Cake is Real",
+          "icon": "Game",
+          "content": "{{var:theCakeIsRealContent}}"
+        },
+        "pokemon-trash-island": {
+          "name": "Pokémon Trash Island",
+          "icon": "Game",
+          "content": "{{var:pokemonTrashIslandContent}}"
+        },
+        "topsy-turvy": {
+          "name": "Topsy Turvy",
+          "icon": "Game",
+          "content": "{{var:topsyTurvyContent}}"
+        },
+      "other": {
+        "name": "Other",
+        "icon": "Folder",
+        "content": "{{file:game-of-sleep}}{{file:omp}}"
+      },
+        "game-of-sleep": {
+          "name": "Game of Sleep",
+          "icon": "Game",
+          "content": "{{var:gameOfSleepContent}}"
+        },
+        "omp": {
+          "name": "OMP",
+          "icon": "Game",
+          "content": "{{var:ompContent}}"
+        },
+    "game-scripts": {
+      "name": "Game Scripts",
+      "icon": "Folder",
+      "content": "{{file:vms}}{{file:voe}}{{file:vht}}{{file:vasp}}{{file:vpm}}{{file:vtg}}{{file:pokesearch}}{{file:emerald-ui-pack}}{{file:onepx-character-creator}}"
+    },
+      "vms": {
+        "name": "Voltseon's Multiplayer Solution",
+        "icon": "Ruby",
+        "content": "{{var:vmsContent}}"
+      },
+      "voe": {
+        "name": "Voltseon's Overworld Encounters",
+        "icon": "Ruby",
+        "content": "{{var:voeContent}}"
+      },
+      "vht": {
+        "name": "Voltseon's Handy Tools",
+        "icon": "Ruby",
+        "content": "{{var:vhtContent}}"
+      },
+      "vasp": {
+        "name": "Voltseon's A-Star Pathfinding",
+        "icon": "Ruby",
+        "content": "{{var:vaspContent}}"
+      },
+      "vpm": {
+        "name": "Voltseon's Pause Menu",
+        "icon": "Ruby",
+        "content": "{{var:vpmContent}}"
+      },
+      "vtg": {
+        "name": "Voltseon's Trainer Generator",
+        "icon": "Ruby",
+        "content": "{{var:vtgContent}}"
+      },
+      "pokesearch": {
+        "name": "PokéSearch",
+        "icon": "Ruby",
+        "content": "{{var:pokesearchContent}}"
+      },
+      "emerald-ui-pack": {
+        "name": "Pokémon Emerald UI Pack",
+        "icon": "Image",
+        "content": "{{var:emeraldUIPackContent}}"
+      },
+      "onepx-character-creator": {
+        "name": "1px Character Creator",
+        "icon": "Image",
+        "content": "{{var:onepxCharacterCreatorContent}}"
+      },
+    "overige-games": {
+      "name": "Other Games",
+      "icon": "Folder",
+      "content": "{{file:planet-stranded}}{{file:bus-catching}}"
+    },
+      "planet-stranded": {
+        "name": "Planet Stranded",
+        "icon": "Game",
+        "content": "{{var:planetStrandedContent}}"
+      },
+      "bus-catching": {
+        "name": "Bus Catching",
+        "icon": "Game",
+        "content": "{{var:busCatchingContent}}"
+      },
+    "portfolio-website": {
+      "name": "Portfolio Website",
+      "icon": "Browser",
+      "content": "{{var:portfolioWebsiteContent}}"
+    },
+    "dnd": {
+      "name": "D&D",
+      "icon": "DnD",
+      "content": "{{var:dndContent}}"
+    },
+  "about": {
+    "name": "About",
+    "icon": "About",
+    "content": "{{var:aboutContent}}",
+    "desktop": true
+  },
+  "contact": {
+    "name": "Contact",
+    "icon": "Contact",
+    "content": "{{var:contactFormContent}}",
+    "desktop": true
+  }
+}
