@@ -73,8 +73,8 @@ function loadWindows() {
         var windowElement = base_window;
         var navTaskElement = base_nav_task;
         windowElement = windowElement.replace(/{{content}}/g, window.content);
-        windowElement = windowElement.replace(/{{var:([^}]+)}}/g, replaceVariable);
-        windowElement = windowElement.replace(/{{file:([^}]+)}}/g, replaceFile);
+        windowElement = windowElement.replace(/{{var=([^}]+)}}/g, replaceVariable);
+        windowElement = windowElement.replace(/{{file=([^}]+)}}/g, replaceFile);
         if (window.loadFile) {
           windowElement = windowElement.replace(/{{loadFile}}/g, window.loadFile);
         }
@@ -92,7 +92,4 @@ function loadWindows() {
   });
 }
 
-setTimeout(() => {
-  loadFiles();
-  loadWindows();
-}, 1000);
+setTimeout(() => { loadFiles(); loadWindows(); }, 1000);

@@ -5,12 +5,18 @@
 }
 
 .full-fill {
-  height: 100%;
+  height: auto;
+  padding-bottom: 50dvh;
+  min-height: unset;
   background-color: var(--load-bg);
 }
 
 .full-fill iframe {
-  height: inherit;
+  height: 100dvh;
+}
+
+.personal-project-content, .school-project-content, .other-content {
+  height: auto;
 }
 
 .project-image {
@@ -116,8 +122,17 @@
   background-image: url("../assets/img/burger-menu-open.svg");
 }
 
+#rc-game-jam-submenu {
+  scale: 0.8;
+  margin-bottom: -130px;
+}
 
-@media (min-width: 576px) {
+#professional-skills-y1s2-feedback-submenu {
+  scale: 0.6;
+  margin-bottom: -180px;
+}
+
+@media (max-width: 768px) {
   .navbar {
     height: calc(100% - 64px);
     width: 0;

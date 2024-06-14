@@ -116,6 +116,7 @@ br {
 
 .window {
   position: absolute;
+  top: 0;
   width: calc(100% - 0.25dvh);
   height: 81.25dvh;
   background-color: #f8f8f8;
@@ -302,7 +303,7 @@ br {
   border-bottom: 0.25dvh solid var(--file-selected-border);
 }
 
-.menu-button {
+.menu-button, .project-button {
   background-color: transparent;
   border: none;
   height: 3.5dvh;
@@ -314,12 +315,12 @@ br {
   transition: background-color 0.1s, border 0.1s;
 }
 
-.menu-button:hover {
+.menu-button:hover, .project-button:hover {
   background-color: var(--file-hover-background);
   border: 0.25dvh solid var(--file-hover-border);
 }
 
-.menu-button:active {
+.menu-button:active, .project-button:active {
   background-color: var(--file-selected-background);
   border: 0.25dvh solid var(--file-selected-border);
 }

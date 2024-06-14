@@ -74,7 +74,7 @@ function maximizeWindow(type='') {
   currentWindow.style.width = 'calc(100% - 0.25dvh)';
   currentWindow.style.height = '81.25dvh';
   currentWindow.style.left = null;
-  currentWindow.style.top = null;
+  currentWindow.style.top = '0';
   const navTask = getTask(type);
   navTask.style.display = 'flex';
   resetAllNavTasks();

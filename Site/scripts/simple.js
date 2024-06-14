@@ -37,7 +37,7 @@ function openPage(page) {
   var file = windows[page];
   var content = document.querySelector('.content');
 
-  if (file.content.includes("{{file:")) {
+  if (file.content.includes("{{file=")) {
     var submenu = document.getElementById(page + '-submenu');
     resetSubmenus(submenu.getAttribute('structure'));
     if (submenu.style.display == 'none') {
@@ -48,11 +48,15 @@ function openPage(page) {
       submenu.style.display = 'none';
     }
   }
+  else if (file.content.includes("{{link=")) {
+    var link = file.content.match(/{{link=([^}]*)}}/g)[0].replace(/{{link=([^}]*)}}/g, '$1');
+    window.open(link, '_blank');
+  }
   else {
     content.innerHTML = '';
     var contentElement = file.content;
 
-    contentElement = contentElement.replace(/{{var:([^}]+)}}/g, replaceVariable);
+    contentElement = contentElement.replace(/{{var=([^}]+)}}/g, replaceVariable);
     if (file.loadFile) {
       contentElement = contentElement.replace(/{{loadFile}}/g, file.loadFile);
     }
@@ -131,12 +135,12 @@ function parseFile(windows, key, parsed, index, depth) {
   var returnValue = "";
   returnValue += button.replace(/{{type}}/g, key);
   if (file.content) {
-    if (file.content.includes("{{file:")) {
+    if (file.content.includes("{{file=")) {
       var submenu = "";
-      var files = file.content.match(/{{file:([^}]*)}}/g);
+      var files = file.content.match(/{{file=([^}]*)}}/g);
       var subindex = 0;
       for (var i = 0; i < files.length; i++) {
-        submenu += parseFile(windows, files[i].replace(/{{file:([^}]*)}}/g, '$1'), parsed, index + '.' + subindex, depth + 1);
+        submenu += parseFile(windows, files[i].replace(/{{file=([^}]*)}}/g, '$1'), parsed, index + '.' + subindex, depth + 1);
         parsed[file] = file;
         subindex++;
       }
@@ -147,6 +151,4 @@ function parseFile(windows, key, parsed, index, depth) {
   return returnValue;
 }
 
-setTimeout(() => {
-  loadFiles();
-}, 1000);
+setTimeout(() => { loadFiles(); }, 1000);
