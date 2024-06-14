@@ -310,14 +310,191 @@
     "professional-skills-y2s2": {
       "name": "Year 2 Semester 2",
       "icon": "Folder",
-      "content": "{{file=ps-y2s2-pop}}"
+      "content": "{{file=ps-y2s2-reflecteren}}{{file=ps-y2s2-feedback}}{{file=ps-y2s2-beroepsorientatie}}{{file=ps-y2s2-pop}}{{file=ps-y2s2-communicatie}}{{file=ps-y2s2-onderzoek}}{{file=ps-y2s2-projectmanagement}}{{file=ps-y2s2-edumundo}}{{file=ps-y2s2-organisatieprocessen}}"
     },
+      "ps-y2s2-reflecteren": {
+        "name": "Reflecteren",
+        "icon": "Folder",
+        "content": "{{file=ps-y2s2-reflectieverslag}}"
+      },
+        "ps-y2s2-reflectieverslag": {
+          "name": "Reflectieverslag",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Reflectieverslag.pdf"
+        },
+      "ps-y2s2-feedback": {
+        "name": "Feedback",
+        "icon": "Folder",
+        "content": "{{file=ps-y2s2-feedback-projectlid-1}}{{file=ps-y2s2-feedback-projectlid-2}}{{file=ps-y2s2-feedback-docent}}{{file=ps-y2s2-feedback-opdrachtgever}}"
+      },
+        "ps-y2s2-feedback-projectlid-1": {
+          "name": "Feedback - Student 1",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Feedback_Projectlid_1.pdf"
+        },
+        "ps-y2s2-feedback-projectlid-2": {
+          "name": "Feedback - Student 2",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Feedback_Projectlid_2.pdf"
+        },
+        "ps-y2s2-feedback-docent": {
+          "name": "Feedback - Docent",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Feedback_Docent.pdf"
+        },
+        "ps-y2s2-feedback-opdrachtgever": {
+          "name": "Feedback - Opdrachtgever",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Feedback_Opdrachtgever.pdf"
+        },
+      "ps-y2s2-beroepsorientatie": {
+        "name": "Beroepsoriëntatie",
+        "icon": "Folder",
+        "content": "{{file=cv-nl}}{{file=cv-en}}"
+      },
       "ps-y2s2-pop": {
         "name": "POP",
-        "icon": "Pdf",
-        "content": "{{var=iframeFile}}",
-        "loadFile": "pdf/PS_Y2S2_POP.pdf"
+        "icon": "Folder",
+        "content": "{{file=ps-y2s2-pop-actual}}{{file=ps-y2s2-pop-bewijslast}}"
       },
+        "ps-y2s2-pop-actual": {
+          "name": "POP",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_POP.pdf"
+        },
+        "ps-y2s2-pop-bewijslast": {
+          "name": "POP Bewijslast",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_POP_Bewijslast.pdf"
+        },
+      "ps-y2s2-communicatie": {
+        "name": "Communicatie",
+        "icon": "Folder",
+        "content": "{{file=ps-y2s2-htaal}}"
+      },
+        "ps-y2s2-htaal": {
+          "name": "Hogeschooltaal Certificaat",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_HTaal.pdf"
+        },
+      "ps-y2s2-onderzoek": {
+        "name": "Onderzoek",
+        "icon": "Folder",
+        "content": "{{file=ps-y2s2-onderzoeksvoorstel}}{{file=ps-y2s2-onderzoeksrapport}}"
+      },
+        "ps-y2s2-onderzoeksvoorstel": {
+          "name": "Onderzoeksvoorstel",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Onderzoeksvoorstel.pdf"
+        },
+        "ps-y2s2-onderzoeksrapport": {
+          "name": "Onderzoeksrapport",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Onderzoeksrapport.pdf"
+        },
+      "ps-y2s2-projectmanagement": {
+        "name": "Projectmanagement",
+        "icon": "Folder",
+        "content": "{{file=ps-y2s2-retrospectives}}{{file=ps-y2s2-scrumboards}}{{file=ps-y2s2-burndown-charts}}"
+      },
+        "ps-y2s2-retrospectives": {
+          "name": "Retrospectives",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Retrospectives.pdf"
+        },
+        "ps-y2s2-scrumboards": {
+          "name": "Scrumboards",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Scrumboards.pdf"
+        },
+        "ps-y2s2-burndown-charts": {
+          "name": "Burndown Charts",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Burndown_Charts.pdf"
+        },
+      "ps-y2s2-edumundo": {
+        "name": "Edumundo",
+        "icon": "Folder",
+        "content": "{{file=ps-y2s2-edumundo-actual}}"
+      },
+        "ps-y2s2-edumundo-actual": {
+          "name": "Edumundo",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Edumundo.pdf"
+        },
+      "ps-y2s2-organisatieprocessen": {
+        "name": "Organisatieprocessen",
+        "icon": "Folder",
+        "content": "{{file=ps-y2s2-stakeholderanalyse-2-1}}{{file=ps-y2s2-stakeholderanalyse-2-2}}{{file=ps-y2s2-stakeholderanalyse-2-3}}{{file=ps-y2s2-value-chain-2-1}}{{file=ps-y2s2-value-chain-2-2}}{{file=ps-y2s2-value-chain-2-3}}{{file=ps-y2s2-gap-analyse-2-1}}{{file=ps-y2s2-gap-analyse-2-2}}{{file=ps-y2s2-gap-analyse-2-3}}"
+      },
+        "ps-y2s2-stakeholderanalyse-2-1": {
+          "name": "Stakeholderanalyse 2.1",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Stakeholderanalyse_2_1.pdf"
+        },
+        "ps-y2s2-stakeholderanalyse-2-2": {
+          "name": "Stakeholderanalyse 2.2",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Stakeholderanalyse_2_2.pdf"
+        },
+        "ps-y2s2-stakeholderanalyse-2-3": {
+          "name": "Stakeholderanalyse 2.3",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Stakeholderanalyse_2_3.pdf"
+        },
+        "ps-y2s2-value-chain-2-1": {
+          "name": "Value Chain 2.1",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Value_Chain_2_1.pdf"
+        },
+        "ps-y2s2-value-chain-2-2": {
+          "name": "Value Chain 2.2",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Value_Chain_2_2.pdf"
+        },
+        "ps-y2s2-value-chain-2-3": {
+          "name": "Value Chain 2.3",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Value_Chain_2_3.pdf"
+        },
+        "ps-y2s2-gap-analyse-2-1": {
+          "name": "Gap Analyse 2.1",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Gap_Analyse_2_1.pdf"
+        },
+        "ps-y2s2-gap-analyse-2-2": {
+          "name": "Gap Analyse 2.2",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Gap_Analyse_2_2.pdf"
+        },
+        "ps-y2s2-gap-analyse-2-3": {
+          "name": "Gap Analyse 2.3",
+          "icon": "Pdf",
+          "content": "{{var=iframeFile}}",
+          "loadFile": "pdf/PS_Y2S2_Gap_Analyse_2_3.pdf"
+        },
   "school-projects": {
     "name": "School Projects",
     "icon": "Folder",

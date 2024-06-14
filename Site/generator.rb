@@ -1,11 +1,11 @@
 class Constants
   def initialize
-    @basicSchoolProjectContent = "<div class='full-fill'><div class='school-project-content'><div class='school-project-header' style='background-image: url(../assets/img/banner\"{{type}}.jpg);'><h1 data-localize=\"{{type}}_name\"></h1></div><p data-localize=\"{{type}}_duration\"></p><p data-localize=\"{{type}}_members\"></p><br><p data-localize=\"{{type}}_description\"></p><p data-localize=\"{{type}}_made_using\"></p><br>{{uniqueContent}}</div></div>"
-    @basicPersonalProjectContent = "<div class='full-fill'><div class='personal-project-content'><div class='personal-project-header' style='background-image: url(../assets/img/banner\"{{type}}.jpg);'><h1 data-localize=\"{{type}}_name\"></h1></div><p data-localize=\"{{type}}_description\"></p><br>{{uniqueContent}}</div></div>"
+    @basicSchoolProjectContent = "<div class='full-fill'><div class='school-project-content'><div class='school-project-header' style='background-image: url(../assets/img/banner/{{type}}.jpg);'><h1 data-localize=\"{{type}}_name\"></h1></div><p data-localize=\"{{type}}_duration\"></p><p data-localize=\"{{type}}_members\"></p><br><p data-localize=\"{{type}}_description\"></p><p data-localize=\"{{type}}_made_using\"></p><br>{{uniqueContent}}</div></div>"
+    @basicPersonalProjectContent = "<div class='full-fill'><div class='personal-project-content'><div class='personal-project-header' style='background-image: url(../assets/img/banner/{{type}}.jpg);'><h1 data-localize=\"{{type}}_name\"></h1></div><p data-localize=\"{{type}}_description\"></p><br>{{uniqueContent}}</div></div>"
     @contactFormContent = "<div class='full-fill'><div class='other-content'><h1 data-localize=\"contact\"></h1><p data-localize=\"contact_subtitle\"></p><p data-localize=\"contact_alternative\"></p><form id='contactForm' action='#'><label for='name'><span class='required'>*</span> <span data-localize=\"name\"></span>:</label><input type='text' id='name' name='name' autocomplete='name' title='' required><label for='email'><span class='required'>*</span> <span data-localize=\"email\"></span>:</label><input type='email' id='email' name='email' autocomplete='email' title='' required><label for='subject' name='subject'><span class='required'>*</span> <span data-localize=\"subject\"></span>:</label><input type='text' id='subject' name='subject' autocomplete='subject' title='' required><label for='message'><span class='required'>*</span> <span data-localize=\"message\"></span>:</label><textarea name='message' id='message' autocomplete='off' title='' required></textarea><button onclick='submitContactForm(event)' data-localize=\"send\"></button><p id='error' data-localize=\"mail_error\"></p></form></div></div>"
-    @iframeFile = "<div class='full-fill'><div class='other-content'><button onclick='openURL(\"./assets\"{{loadFile}}\")' data-localize=\"open_seperate\"></button><iframe targetSource=\"./assets\"{{loadFile}}\"></iframe></div></div>"
-    @videoFile = "<div class='full-fill'><div class='other-content'><button onclick='openURL(\"./assets/video\"{{loadFile}}\")' data-localize=\"open_seperate\"></button><video controls preload=\"none\"><source src=\"./assets/video\"{{loadFile}}\" type=\"video/mp4\"><p data-localize=\"video_not_supported\"></p></video></div></div>"
-    @audioFile = "<div class='full-fill'><div class='other-content'><button onclick='openURL(\"./assets/audio\"{{loadFile}}\")' data-localize=\"open_seperate\"></button><audio controls preload=\"none\"><source src=\"./assets/audio\"{{loadFile}}\" type=\"audio/mp3\"><p data-localize=\"audio_not_supported\"></p></audio></div></div>"
+    @iframeFile = "<div class='full-fill'><div class='other-content'><button onclick='openURL(\"./assets/{{loadFile}}\")' data-localize=\"open_seperate\"></button><iframe targetSource=\"./assets/{{loadFile}}\"></iframe></div></div>"
+    @videoFile = "<div class='full-fill'><div class='other-content'><button onclick='openURL(\"./assets/video/{{loadFile}}\")' data-localize=\"open_seperate\"></button><video controls preload=\"none\"><source src=\"./assets/video/{{loadFile}}\" type=\"video/mp4\"><p data-localize=\"video_not_supported\"></p></video></div></div>"
+    @audioFile = "<div class='full-fill'><div class='other-content'><button onclick='openURL(\"./assets/audio/{{loadFile}}\")' data-localize=\"open_seperate\"></button><audio controls preload=\"none\"><source src=\"./assets/audio/{{loadFile}}\" type=\"audio/mp3\"><p data-localize=\"audio_not_supported\"></p></audio></div></div>"
     @sunnyContent = @basicSchoolProjectContent.gsub("{{uniqueContent}}", "<button class=\"project-button\" onclick=\"openURL('https://github.com/Raeven69/Sunny')\">Github</button><button class=\"project-button\" onclick=\"openURL('https://raeven69.github.io/Sunny/')\">Website</button>")
     @morgisterContent = @basicSchoolProjectContent.gsub("{{uniqueContent}}", "<button class=\"project-button\" onclick=\"openURL('https://github.com/AmanTrechsel/Team-Bravo')\">Github</button><p class=\"note\" data-localize=\"morgister_note\"></p>")
     @battlebotsContent = @basicSchoolProjectContent.gsub("{{uniqueContent}}", "<button onclick='openURL(\"./assets/video/battlebots.mp4\")' data-localize=\"open_seperate\"></button><video controls preload=\"none\"><source src=\"./assets/video/battlebots.mp4\" type=\"video/mp4\"><p data-localize=\"video_not_supported\"></p></video><button class=\"project-button\" onclick=\"openURL('https://github.com/AmanTrechsel/Jasir-en-de-rest')\">Github</button>")
@@ -156,6 +156,8 @@ base_window = File.join(script_directory, 'assets/html/base_window.html')
 @base_window_content = File.read(base_window)
 @base_nav_task_content = File.read(base_nav_task)
 
+@skipped_files = ["output", "generator", "timewise", "Build", "img", "audio", "assets"]
+
 def readFile(window)
   new_content = parseContent(@base_file_content, window)
   new_content = new_content.gsub('class="file', 'class="file folder"') unless window.desktop
@@ -197,7 +199,6 @@ end
 
 index = 0
 @windows.each_value do |window|
-  next if (@parsed.include?(window))
   # Index Content
   @index_content += readFile(window) + "\n" if window.desktop
 
@@ -208,7 +209,7 @@ index = 0
   @index_nav_tasks += readNavTask(window) + "\n"
 
   # Simple Nav Content
-  @simple_nav_content += parse_simple_nav_content(window, index, 0)
+  @simple_nav_content += parse_simple_nav_content(window, index, 0) unless (@parsed.include?(window))
   index += 1
 end
 
@@ -218,6 +219,7 @@ Dir.mkdir(target_directory) unless Dir.exist?(target_directory)
 # Method to copy files and directories recursively
 def copy_recursive(src, dest)
   return if src.end_with?('.rb') || src.end_with?('.db') || src.end_with?('.json')
+  return if @skipped_files.any? { |file| src.include?(file) }
   if File.directory?(src)
     return if src.end_with?('output') || src.end_with?('html') || src.end_with?('json')
     # Create the directory in the destination
@@ -241,10 +243,12 @@ def copy_recursive(src, dest)
             if search[0] && !search[3]
               new_content += @index_content
               search[3] = true
-            elsif search[1] && !search[4]
+            end
+            if search[1] && !search[4]
               new_content += @index_windows
               search[4] = true
-            elsif search[2] && !search[5]
+            end
+            if search[2] && !search[5]
               new_content += @index_nav_tasks
               search[5] = true
             end

@@ -35,6 +35,9 @@ function loadFiles() {
 function loadFile(key, base_file) {
   var file = windows[key];
   var fileElement = base_file;
+  if (file == undefined || file == null) {
+    console.log(key);
+  }
   fileElement = fileElement.replace(/{{type}}/g, key);
   fileElement = fileElement.replace(/{{name}}/g, file.name);
   fileElement = fileElement.replace(/{{icon}}/g, file.icon);
