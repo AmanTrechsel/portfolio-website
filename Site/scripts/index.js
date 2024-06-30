@@ -1,6 +1,8 @@
 var beforeLoaded = document.querySelector("#beforeLoaded");
 var postLoaded = document.querySelector("#postLoaded");
 var loadingTooLong = document.querySelector("#loadingBarTooLong");
+var tutorialInitial = document.querySelector("#tutorialInitial");
+var tutorialSecondary = document.querySelector("#tutorialSecondary");
 var monitor = document.querySelector(".monitor");
 
 beforeLoaded.style.display = "inherit";
@@ -16,20 +18,25 @@ setTimeout(function() {
 function loaded() {
   setTimeout(function() {
     beforeLoaded.classList.add("hide");
-    postLoaded.style.display = "inherit";
+    postLoaded.style.display = "contents";
     setTimeout(function() {
-      beforeLoaded.style.display = "none";
-      postLoaded.classList.add("show");
+      if (beforeLoaded.style.display == "hide") {
+        beforeLoaded.style.display = "none";
+        postLoaded.classList.add("show");
+      }
     }, 500);
   }, 1000);
 }
 
 function hideOverlay() {
   postLoaded.classList.remove("show");
+  tutorialInitial.classList.add("shown");
   setTimeout(function() {
-    postLoaded.style.display = "none";
-    monitor.style.display = "flex";
-    monitor.focus();
+    if (postLoaded.classList.contains("show") == false) {
+      postLoaded.style.display = "none";
+      monitor.style.display = "flex";
+      monitor.focus();
+    }
   }, 500);
 }
 

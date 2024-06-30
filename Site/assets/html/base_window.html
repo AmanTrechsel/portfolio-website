@@ -9,7 +9,13 @@
   </div>
   <div class="menu-bar">
     <img class="move-icon" src="./assets/img/Move.webp" alt="Move Icon" />
-    <button class="menu-button" data-localize="file"></button>
+    <button class="menu-button" data-localize="file" onclick="openDropdown('file-{{type}}')"></button>
+    <div class="menu-dropdown" id="menu-dropdown-file-{{type}}">
+      <!--<button class="menu-button" data-localize="download_all" onclick="downloadAll('{{type}}')"></button>-->
+      <button class="menu-button" data-localize="minimize" onclick="minimizeWindow('{{type}}')"></button>
+      <button class="menu-button" data-localize="maximize" onclick="maximizeWindow('{{type}}')"></button>
+      <button class="menu-button" data-localize="close" onclick="closeWindow('{{type}}')"></button>
+    </div>
     <button class="menu-button" data-localize="edit"></button>
     <button class="menu-button" data-localize="view"></button>
     <button class="menu-button" data-localize="favorites"></button>

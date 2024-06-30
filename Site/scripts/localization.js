@@ -6,6 +6,8 @@ var translations = {
     "gl_not_supported": "WebGL is not supported on this device or browser.",
     "simple_button": "Simple View",
     "hardware_warning": "For the best results, please turn on 'Hardware Acceleration'.",
+    "tutorial_initial": "Click on the PC to begin",
+    "tutorial_secondary": "Click on the monitor to view the content",
     "loading": "Loading...",
     "loading_too_long": "It seems to be taking a while. Would you like to try the simple view?",
     "orientation_not_supported": "This website does not support portrait mode. Please rotate your device to landscape mode.",
@@ -13,8 +15,11 @@ var translations = {
     "english": "English",
     "german": "German",
     "about": "About",
-    "about_intro": "Hi, I'm Aman Trechsel. I'm a 20 year old student from the Netherlands. I'm currently studying Software Engineering at NHL Stenden Emmen and have a passion for software development and game development. I'm always looking for new challenges and opportunities to learn and grow.",
+    "about_intro": "Hi, I'm Aman Trechsel. I'm a {{age}} year old student from the Netherlands. I'm currently studying Software Engineering at NHL Stenden Emmen and have a passion for software development and game development. I'm always looking for new challenges and opportunities to learn and grow.",
     "skills": "Skills",
+    "minimize": "Minimize",
+    "maximize": "Maximize",
+    "close": "Close",
     "programming_languages": "Programming Languages",
     "languages": "Speaking & Writing Languages",
     "frameworks_and_tools": "Frameworks & Tools",
@@ -53,7 +58,7 @@ var translations = {
     "cv-nl_name": "CV (NL)",
     "cv-en_name": "CV (EN)",
     "professional-skills_name": "Professional Skills",
-    "professional-skills-y1s2_name": "Year 1 Semester 2",
+    "professional-skills-y1s2_name": "Year 1.2",
     "professional-skills-y1s2-rapporteren_name": "Reporting",
     "ps-y1s2-technisch-adviesrapport_name": "Technical Advice Report",
     "ps-y1s2-bouwplan_name": "Construction Plan",
@@ -80,7 +85,7 @@ var translations = {
     "ps-y1s2-feedback-student-2_name": "Feedback - Student 2",
     "ps-y1s2-feedback-student-3_name": "Feedback - Student 3",
     "ps-y1s2-feedback-student-4_name": "Feedback - Student 4",
-    "professional-skills-y2s1_name": "Year 2 Semester 1",
+    "professional-skills-y2s1_name": "Year 2.1",
     "ps-y2s1-edumundo_name": "Edumundo",
     "ps-y2s1-pop_name": "POP",
     "ps-y2s1-reflectieverslag_name": "Reflection Report",
@@ -102,7 +107,7 @@ var translations = {
     "ps-y2s1-feedback-roan_name": "Feedback Roan",
     "ps-y2s1-feedback-tim_name": "Feedback Tim",
     "ps-y2s1-feedback-raeven_name": "Feedback Raeven",
-    "professional-skills-y2s2_name": "Year 2 Semester 2",
+    "professional-skills-y2s2_name": "Year 2.2",
     "ps-y2s2-reflecteren_name": "Reflecting",
     "ps-y2s2-reflectieverslag_name": "Reflection Report",
     "ps-y2s2-feedback_name": "Feedback",
@@ -121,7 +126,7 @@ var translations = {
     "ps-y2s2-onderzoeksrapport_name": "Research Report",
     "ps-y2s2-projectmanagement_name": "Projectmanagement",
     "ps-y2s2-retrospectives_name": "Retrospectives",
-    "ps-y2s2-scrumboards_name": "Scrumboards",
+    "ps-y2s2-sprintbacklogs_name": "Sprint Backlogs",
     "ps-y2s2-burndown-charts_name": "Burndown Charts",
     "ps-y2s2-edumundo_name": "Edumundo",
     "ps-y2s2-edumundo-actual_name": "Edumundo",
@@ -286,6 +291,8 @@ var translations = {
     "gl_not_supported": "WebGL wordt niet ondersteund door dit apparaat of browser.",
     "simple_button": "Simpele Weergave",
     "hardware_warning": "Voor de beste resultaten, zet 'Hardware Acceleration' aan, a.u.b.",
+    "tutorial_initial": "Klik op de PC om te beginnen.",
+    "tutorial_secondary": "Klik op de monitor om inhoud weer te geven.",
     "loading": "Laden...",
     "loading_too_long": "Het lijkt erop dat het even duurt. Wil je de simpele weergave proberen?",
     "orientation_not_supported": "Deze website ondersteunt geen portrait modus. Draai je apparaat naar landscape modus, a.u.b.",
@@ -293,8 +300,11 @@ var translations = {
     "english": "Engels",
     "german": "Duits",
     "about": "Over Mij",
-    "about_intro": "Hallo, ik ben Aman Trechsel. Ik ben een 20 jarige student uit Nederland. Ik studeer momenteel Software Engineering aan NHL Stenden Emmen en heb een passie voor software development en game development. Ik ben altijd op zoek naar nieuwe uitdagingen en kansen om te leren en te groeien.",
+    "about_intro": "Hallo, ik ben Aman Trechsel. Ik ben een {{age}} jarige student uit Nederland. Ik studeer momenteel Software Engineering aan NHL Stenden Emmen en heb een passie voor software development en game development. Ik ben altijd op zoek naar nieuwe uitdagingen en kansen om te leren en te groeien.",
     "skills": "Vaardigheden",
+    "minimize": "Minimaliseer",
+    "maximize": "Maximaliseer",
+    "close": "Sluit",
     "programming_languages": "Programmeertalen",
     "languages": "Spreek- & Schrijftalen",
     "frameworks_and_tools": "Frameworks & Tools",
@@ -333,7 +343,7 @@ var translations = {
     "cv-nl_name": "CV (NL)",
     "cv-en_name": "CV (EN)",
     "professional-skills_name": "Professional Skills",
-    "professional-skills-y1s2_name": "Leerjaar 1 Semester 2",
+    "professional-skills-y1s2_name": "Leerjaar 1.2",
     "professional-skills-y1s2-rapporteren_name": "Rapporteren",
     "ps-y1s2-technisch-adviesrapport_name": "Technisch Adviesrapport",
     "ps-y1s2-bouwplan_name": "Bouwplan",
@@ -360,7 +370,7 @@ var translations = {
     "ps-y1s2-feedback-student-2_name": "Feedback - Student 2",
     "ps-y1s2-feedback-student-3_name": "Feedback - Student 3",
     "ps-y1s2-feedback-student-4_name": "Feedback - Student 4",
-    "professional-skills-y2s1_name": "Leerjaar 2 Semester 1",
+    "professional-skills-y2s1_name": "Leerjaar 2.1",
     "ps-y2s1-edumundo_name": "Edumundo",
     "ps-y2s1-pop_name": "POP",
     "ps-y2s1-reflectieverslag_name": "Reflectieverslag",
@@ -382,7 +392,7 @@ var translations = {
     "ps-y2s1-feedback-roan_name": "Feedback Roan",
     "ps-y2s1-feedback-tim_name": "Feedback Tim",
     "ps-y2s1-feedback-raeven_name": "Feedback Raeven",
-    "professional-skills-y2s2_name": "Leerjaar 2 Semester 2",
+    "professional-skills-y2s2_name": "Leerjaar 2.2",
     "ps-y2s2-reflecteren_name": "Reflecteren",
     "ps-y2s2-reflectieverslag_name": "Reflectieverslag",
     "ps-y2s2-feedback_name": "Feedback",
@@ -401,7 +411,7 @@ var translations = {
     "ps-y2s2-onderzoeksrapport_name": "Onderzoeksrapport",
     "ps-y2s2-projectmanagement_name": "Projectmanagement",
     "ps-y2s2-retrospectives_name": "Retrospectives",
-    "ps-y2s2-scrumboards_name": "Scrumboards",
+    "ps-y2s2-sprintbacklogs_name": "Sprint Backlogs",
     "ps-y2s2-burndown-charts_name": "Burndown Charts",
     "ps-y2s2-edumundo_name": "Edumundo",
     "ps-y2s2-edumundo-actual_name": "Edumundo",
@@ -564,6 +574,22 @@ var translations = {
   }
 }
 
+function getAge() {
+  const inputDate = new Date("2003-08-05");
+  const currentDate = new Date();
+  
+  let yearsDifference = currentDate.getFullYear() - inputDate.getFullYear();
+  
+  const monthDifference = currentDate.getMonth() - inputDate.getMonth();
+  const dayDifference = currentDate.getDate() - inputDate.getDate();
+  
+  if (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)) {
+    yearsDifference--;
+  }
+  
+  return yearsDifference;
+}
+
 function setLocalization(lang) {
   currentLanguage = "" + lang;
   localStorage.setItem("language", lang);
@@ -581,12 +607,13 @@ function setLocalization(lang) {
 }
 
 function updateContent() {
+  const age = getAge();
   var localizedElements = document.querySelectorAll("[data-localize]");
   localizedElements.forEach(element => {
     const key = element.getAttribute("data-localize");
     if (translations[currentLanguage]) {
       if (translations[currentLanguage][key]) {
-        element.innerHTML = translations[currentLanguage][key];
+        element.innerHTML = translations[currentLanguage][key].replace(/{{age}}/g, age);
       }
     }
   })

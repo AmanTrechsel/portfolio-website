@@ -11,12 +11,35 @@ var lastX, lastY, isMouseDown = false;
 var cachedWindows = {};
 var cachedTasks = {};
 const minimumSize = new Rectangle(0, 0, 320, 320);
+const menuDropdowns = document.querySelectorAll('.menu-dropdown');
+var openedDropdowns = [];
+
+function closeAllDropdowns() {
+  menuDropdowns.forEach(dropdown => {
+    dropdown.classList.remove('opened');
+  });
+}
+
+function closeOpenedDropdowns() {
+  openedDropdowns.forEach(dropdown => {
+    dropdown.classList.remove('opened');
+  });
+  openedDropdowns = [];
+}
+
+function openDropdown(suffix='') {
+  closeOpenedDropdowns();
+  const dropdown = document.getElementById('menu-dropdown-' + suffix);
+  dropdown.classList.add('opened');
+  openedDropdowns.push(dropdown);
+}
 
 document.addEventListener('mouseup', function (event) {
   if (event.button === 0) {
     isMouseDown = false;
     lastX = null;
     lastY = null;
+    closeOpenedDropdowns();
   }
 });
 
@@ -36,6 +59,14 @@ function getTask(type='') {
   const currentTask = document.getElementById('nav-task-' + type);
   cachedTasks[type] = currentTask;
   return currentTask;
+}
+
+function downloadAll(type='') {
+  const currentWindow = getWindow(type);
+  const links = currentWindow.querySelectorAll('a');
+  links.forEach(link => {
+    link.click();
+  });
 }
 
 function closeWindow(type='') {
@@ -138,6 +169,24 @@ function openWindow(type='') {
       currentWindow.style.zIndex = 1;
     }
   });
+  /*
+  currentWindow.addEventListener('mousedown', function (event) {
+    if (event.button === 0) {
+      isMouseDown = true;
+      currentWindow.style.width = '70dvh';
+      currentWindow.style.height = '60dvh';
+    }
+    if (currentWindow.style.zIndex != 2) {
+      resetAllWindowZIndex();
+      currentWindow.style.zIndex = 2;
+    }
+  });
+  currentWindow.addEventListener('mouseup', function (event) {
+    if (currentWindow.style.zIndex == 2) {
+      currentWindow.style.zIndex = 1;
+    }
+  });
+  */
 }
 
 function moveWindow(currentWindow, content, navTask, event, shouldMove) {
@@ -210,3 +259,4 @@ function resetContactForm() {
 
 setInterval(updateLocalTime, 2000);
 updateLocalTime();
+closeAllDropdowns();

@@ -325,6 +325,23 @@ br {
   border: 0.25dvh solid var(--file-selected-border);
 }
 
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 7.25dvh;
+  width: 20dvh;
+  background-color: #f8f8f8;
+  border: 0.25dvh solid var(--file-selected-border);
+  border-top: none;
+  border-radius: 0 0 0.5dvh 0.5dvh;
+  z-index: 1;
+}
+
+.menu-dropdown.opened {
+  display: flex;
+  flex-direction: column;
+}
+
 .move-icon {
   margin: 0.75dvh 0.5dvh;
   width: 0.25dvh;

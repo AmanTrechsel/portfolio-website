@@ -405,7 +405,7 @@
       "ps-y2s2-projectmanagement": {
         "name": "Projectmanagement",
         "icon": "Folder",
-        "content": "{{file=ps-y2s2-retrospectives}}{{file=ps-y2s2-scrumboards}}{{file=ps-y2s2-burndown-charts}}"
+        "content": "{{file=ps-y2s2-retrospectives}}{{file=ps-y2s2-sprintbacklogs}}{{file=ps-y2s2-burndown-charts}}"
       },
         "ps-y2s2-retrospectives": {
           "name": "Retrospectives",
@@ -413,11 +413,11 @@
           "content": "{{var=iframeFile}}",
           "loadFile": "pdf/PS_Y2S2_Retrospectives.pdf"
         },
-        "ps-y2s2-scrumboards": {
-          "name": "Scrumboards",
+        "ps-y2s2-sprintbacklogs": {
+          "name": "Sprint Backlogs",
           "icon": "Pdf",
           "content": "{{var=iframeFile}}",
-          "loadFile": "pdf/PS_Y2S2_Scrumboards.pdf"
+          "loadFile": "pdf/PS_Y2S2_Sprint_Backlogs.pdf"
         },
         "ps-y2s2-burndown-charts": {
           "name": "Burndown Charts",
@@ -439,7 +439,7 @@
       "ps-y2s2-organisatieprocessen": {
         "name": "Organisatieprocessen",
         "icon": "Folder",
-        "content": "{{file=ps-y2s2-stakeholderanalyse-2-1}}{{file=ps-y2s2-stakeholderanalyse-2-2}}{{file=ps-y2s2-stakeholderanalyse-2-3}}{{file=ps-y2s2-value-chain-2-1}}{{file=ps-y2s2-value-chain-2-2}}{{file=ps-y2s2-value-chain-2-3}}{{file=ps-y2s2-gap-analyse-2-1}}{{file=ps-y2s2-gap-analyse-2-2}}{{file=ps-y2s2-gap-analyse-2-3}}"
+        "content": "{{file=ps-y2s2-stakeholderanalyse-2-1}}{{file=ps-y2s2-stakeholderanalyse-2-2}}{{file=ps-y2s2-stakeholderanalyse-2-3}}{{file=ps-y2s2-value-chain-2-1}}{{file=ps-y2s2-value-chain-2-2}}{{file=ps-y2s2-value-chain-2-3}}{{file=ps-y2s2-gap-analyse-2-2}}{{file=ps-y2s2-gap-analyse-2-3}}"
       },
         "ps-y2s2-stakeholderanalyse-2-1": {
           "name": "Stakeholderanalyse 2.1",
@@ -476,12 +476,6 @@
           "icon": "Pdf",
           "content": "{{var=iframeFile}}",
           "loadFile": "pdf/PS_Y2S2_Value_Chain_2_3.pdf"
-        },
-        "ps-y2s2-gap-analyse-2-1": {
-          "name": "Gap Analyse 2.1",
-          "icon": "Pdf",
-          "content": "{{var=iframeFile}}",
-          "loadFile": "pdf/PS_Y2S2_Gap_Analyse_2_1.pdf"
         },
         "ps-y2s2-gap-analyse-2-2": {
           "name": "Gap Analyse 2.2",
